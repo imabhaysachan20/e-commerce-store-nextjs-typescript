@@ -5,8 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { fetchAllProducts } from '@/utils/actions';
 import Link from 'next/link';
-import { Suspense } from 'react';
-import LoadingContainer from '../global/LoadingContainer';
+
 
 
 async function ProductsContainer({
