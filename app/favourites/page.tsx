@@ -1,11 +1,11 @@
 import React from 'react'
 
-function page() {
+function Page() {
   return (
-    <div>
-      
+    <div className='grid place-items-center'>
+      <h2>UNDER-CONSTRUCTION</h2>
     </div>
   )
 }
 
-export default page
+export default Page
