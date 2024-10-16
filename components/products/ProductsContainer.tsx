@@ -59,9 +59,7 @@ async function ProductsContainer({
         ) : layout === 'grid' ? (
           <ProductsGrid products={products} />
         ) : (
-          <Suspense fallback={<LoadingContainer/>}>
           <ProductsList products={products} />
-          </Suspense>
         )}
       </div>
     </>
