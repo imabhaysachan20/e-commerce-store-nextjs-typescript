@@ -4,6 +4,7 @@ import "./globals.css";
 import Container from "@/components/global/Container";
 import Navbar from "@/components/navbar/NavBar";
 import Provider from "./Provider";
+import {ClerkProvider} from "@clerk/nextjs"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+      <ClerkProvider>
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -39,5 +41,6 @@ export default function RootLayout({
         </Provider>
       </body>
     </html>
+        </ClerkProvider>
   );
 }
