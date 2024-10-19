@@ -11,10 +11,18 @@ Check out the live demo of the app: [Live Demo](https://e-commerce-store-nextjs-
 
 ## Features Implemented
 
+
+[![User Auth Using Clerk](https://i.postimg.cc/8PZ2xWzF/Screenshot-2024-10-19-224830.png)](https://e-commerce-store-nextjs-typescript.vercel.app/)
+
+
 ### 1. User Authentication
 - **Clerk Authentication**: Integrated with **Clerk** for secure authentication using email/password.
 - **OAuth Providers**: Supports Google and GitHub login (using Clerk).
 - **JWT-based Authentication**: For user sessions management.
+
+
+[![Admin Panel](https://i.postimg.cc/br0hGNbK/Screenshot-2024-10-19-225629.png)](https://e-commerce-store-nextjs-typescript.vercel.app/)
+
 
 ### 2. Product Management
 - **Admin Panel**: 
@@ -25,9 +33,18 @@ Check out the live demo of the app: [Live Demo](https://e-commerce-store-nextjs-
 - **Skeleton Loaders**: Utilized **React Suspense** for loading states.
 - **Favorites Functionality**: Users can add products to their favorites list for easy access.
 
+
+
+[![Screenshot-2024-10-19-230103.png](https://i.postimg.cc/HxF733rQ/Screenshot-2024-10-19-230103.png)](https://e-commerce-store-nextjs-typescript.vercel.app/)
+
+
+
 ### 3. Reviews & Ratings
 - **Product Reviews**: Allows users to submit reviews and ratings for products.
 - **Ratings Display**: Each product displays user-submitted ratings to help other users make informed decisions.
+
+
+[![Screenshot-2024-10-19-230529.png](https://i.postimg.cc/7ZMHW9Wg/Screenshot-2024-10-19-230529.png)](https://e-commerce-store-nextjs-typescript.vercel.app/)
 
 ### 4. Cart & Orders
 - **Cart Functionality**: 
@@ -37,16 +54,25 @@ Check out the live demo of the app: [Live Demo](https://e-commerce-store-nextjs-
 - **Orders Page**: Displays a user’s order history, including product details, cost, shipping address, and date.
 - **Stripe Integration**: Secure payments powered by **Stripe** for payment acceptance.
 
+
+[![Screenshot-2024-10-19-230721.png](https://i.postimg.cc/3RHwRwcH/Screenshot-2024-10-19-230721.png)](https://e-commerce-store-nextjs-typescript.vercel.app/)
+
 ### 5. Search & Filtering
 - **Global Search**: Debounced search functionality in the header, allowing users to search for products or companies.
 
-### 6. User Interface & Styling
+
+### 7. User Interface & Styling
 - **Shadcn UI**: Customizable and modern UI components.
 - **Dark/Light Mode**: Theme switching between dark and light modes.
 - **Fully Responsive**: The design is fully responsive, working seamlessly across devices.
 
-### 7. Routing
+
+
+### 8. Routing
 - **Next.js**: Framework used for server-side rendering and routing.
+
+
+
 
 ## Technologies Used
 
