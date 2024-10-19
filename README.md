@@ -1,29 +1,69 @@
-# E-commerce Store
+# E-Commerce Store (Next.js & TypeScript)
 
-This is a fully functional e-commerce store built with **Next.js** and **TypeScript**. The application features a modern UI using **Shadcn** and utilizes **Supabase** with **Prisma ORM** for database management.
+[![E-Commerce Store](https://i.postimg.cc/Rhx2mQkm/Screenshot-2024-10-19-224400.png)](https://e-commerce-store-nextjs-typescript.vercel.app/)
 
-## Features
 
-- **Home Page**: Hero carousel showcasing featured products with skeleton loading implemented using React Suspense.
-- **Products Page**: Displays all products with searching, filtering, and pagination options.
-- **Single Product Page**: Detailed view of each product with an option to add items to the cart (implementation pending).
-- **Cart Page**: Manage items added to the cart (to be implemented).
-- **Favorites Page**: Save favorite products (to be implemented).
-- **Orders Page**: View order history and details (to be implemented).
-- **Admin Page**: Manage products and orders (to be implemented).
-- **Responsive Design**: Fully responsive layout optimized for various devices.
 
-## Tech Stack
+This is a fully functional, responsive E-commerce store built from scratch using **Next.js**, **TypeScript**, **Prisma**, and **Supabase**. The app includes advanced features such as product management, user authentication, favorites, reviews, and Stripe integration for payments.
 
-- **Frontend**: Next.js, TypeScript, Shadcn UI
-- **Backend**: Supabase
-- **Database**: Prisma ORM
-- **State Management**: Context API (or Redux, not yet implemented)
-- **Styling**: Tailwind CSS
+## Live Demo
+Check out the live demo of the app: [Live Demo](https://e-commerce-store-nextjs-typescript.vercel.app/)
 
-## Installation
+## Features Implemented
+
+### 1. User Authentication
+- **Clerk Authentication**: Integrated with **Clerk** for secure authentication using email/password.
+- **OAuth Providers**: Supports Google and GitHub login (using Clerk).
+- **JWT-based Authentication**: For user sessions management.
+
+### 2. Product Management
+- **Admin Panel**: 
+  - Add, remove, and edit products.
+  - Track product sales.
+- **Product Model**: Built using **Prisma**, with data stored in **Supabase**.
+- **Products Page**: Displays all products with sorting and filtering options (e.g., by price, company, category, etc.).
+- **Skeleton Loaders**: Utilized **React Suspense** for loading states.
+- **Favorites Functionality**: Users can add products to their favorites list for easy access.
+
+### 3. Reviews & Ratings
+- **Product Reviews**: Allows users to submit reviews and ratings for products.
+- **Ratings Display**: Each product displays user-submitted ratings to help other users make informed decisions.
+
+### 4. Cart & Orders
+- **Cart Functionality**: 
+  - Add, remove, and adjust item quantities in the cart.
+  - Persist cart items even after reloads.
+- **Checkout Process**: Completed order placement flow.
+- **Orders Page**: Displays a user’s order history, including product details, cost, shipping address, and date.
+- **Stripe Integration**: Secure payments powered by **Stripe** for payment acceptance.
+
+### 5. Search & Filtering
+- **Global Search**: Debounced search functionality in the header, allowing users to search for products or companies.
+
+### 6. User Interface & Styling
+- **Shadcn UI**: Customizable and modern UI components.
+- **Dark/Light Mode**: Theme switching between dark and light modes.
+- **Fully Responsive**: The design is fully responsive, working seamlessly across devices.
+
+### 7. Routing
+- **Next.js**: Framework used for server-side rendering and routing.
+
+## Technologies Used
+
+- **Next.js**: For building the React app with server-side rendering.
+- **TypeScript**: Ensuring type safety and reducing errors.
+- **Tailwind CSS**: For rapid UI development with utility-first CSS.
+- **Shadcn UI**: A customizable component library.
+- **Prisma**: ORM for interacting with the database.
+- **Supabase**: Backend service for database and authentication.
+- **Clerk**: For user authentication and management.
+- **Stripe**: Secure payment gateway for processing transactions.
+
+
+## Getting Started
+
+### Installation
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/imabhaysachan20/Ecommerce-Store-React.git
