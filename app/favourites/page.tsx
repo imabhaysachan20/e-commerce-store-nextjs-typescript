@@ -1,11 +1,17 @@
-import React from 'react'
+import { fetchUserFavorites } from '@/utils/actions';
+import SectionTitle from '@/components/global/SectionTitle';
+import ProductsGrid from '@/components/products/ProductsGrid';
 
-function Page() {
+async function FavoritesPage() {
+  const favorites = await fetchUserFavorites();
+  if (favorites.length === 0)
+    return <SectionTitle text='You have no favorites yet.' />;
   return (
-    <div className='grid place-items-center'>
-      <h2>UNDER-CONSTRUCTION</h2>
+    <div>
+      <SectionTitle text='Favorites' />
+      <ProductsGrid products={favorites.map((favorite) => favorite.product)} />
     </div>
-  )
+  );
 }
 
-export default Page
+export default FavoritesPage;
